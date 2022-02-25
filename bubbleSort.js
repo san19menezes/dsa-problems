@@ -1,3 +1,4 @@
+//In bubble sort- we assume that after the first iteration, the array gets sorted from the end. And so the next iteration is reduced by 1 from the end.
 function bubbleSort(array) {
     // Write your code here.
     let counter = 0;
