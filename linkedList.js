@@ -5,16 +5,31 @@ class Node {
     }
 }
 
-printLinkedList = (head) => {
-    let current = head;
-    while (current !== null) {
-        console.log(current.val);
-        current = current.next;
-    }
-}
+//Create a linked List
+const a = new Node('A');
+const b = new Node('B');
+const c = new Node('C');
+const d = new Node('D');
 
-printLinkedListR = (root) => {
-    if (head === null) return;
+a.next = b;
+b.next = c;
+c.next = d;
+
+//Print all nodes in Linked List
+//Time: O(n) | Space: O(n)
+// const printLinkedList = (head) => {
+//     let current = head;
+//     while (current !== null) {
+//         console.log(current.val);
+//         current = current.next;
+//     }
+// }
+// printLinkedList(a);
+
+//Print all nodes in Linked List Recursively
+const printAllNodesR = (head) => {
+    if (head === null) return null;
     console.log(head.val);
-    printLinkedListR(head.next);
+    printAllNodesR(head.next);
 }
+printAllNodesR(a);
