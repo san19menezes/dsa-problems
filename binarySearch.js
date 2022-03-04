@@ -7,7 +7,7 @@ function binarySearchHelper(array, target, left, right) {
     const middle = Math.floor((left + right) / 2);
     const match = array[middle];
     if (target === match) return middle;
-    else if (target < middle) {
+    else if (target < match) {
         return binarySearchHelper(array, target, left, middle - 1);
     }
     else {
