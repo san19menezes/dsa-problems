@@ -1,3 +1,5 @@
+//Count the total sets of connected graphs in this big unconnected graph
+
 const edges = [
     ['i', 'j'],
     ['k', 'i'],
@@ -25,7 +27,8 @@ const hasPath = (graph, src, dst, visited) => {
 
 }
 
-// Construct graph using the edges
+// Construct graph using the edges - Also called as adjacency list
+// Time: O(edges) | Space: O(n)
 const constructGraphFromEdge = (edges) => {
     let graph = {};
     for (let edge of edges) {
