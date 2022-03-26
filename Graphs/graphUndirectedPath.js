@@ -1,5 +1,3 @@
-//Count the total sets of connected graphs in this big unconnected graph
-
 const edges = [
     ['i', 'j'],
     ['k', 'i'],
